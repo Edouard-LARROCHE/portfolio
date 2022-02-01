@@ -19,45 +19,42 @@ export default function Login() {
   });
 
   return (
-    <div className='log-form'>
-      <h2>Se connecter</h2>
-
-      <form className='form'>
-        <div className='input-container'>
-          <TextField
-            style={{ paddingBottom: '1rem' }}
-            placeholder='Adresse e-mail'
-            type='email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>{' '}
-        <div className='input-container'>
-          <TextField
-            style={{ paddingBottom: '1rem' }}
-            placeholder='Mot de passe'
-            type='password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+    <>
+      <div className='log-form'>
+        <form className='form-login'>
+          <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+          <div className='input-container'>
+            <TextField
+              style={{ paddingBottom: '1rem' }}
+              placeholder='Adresse e-mail'
+              type='email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className='input-container'>
+            <TextField
+              style={{ paddingBottom: '1rem' }}
+              placeholder='Mot de passe'
+              type='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
           <Link to='/forgot-password'>
-            <p className='link forgotten-password'> Mot de passe oublié</p>
+            <p className='link forgotten-password'> Mot de passe oublié ?</p>
           </Link>
-        </div>
-        <button id='login-btn' onClick={() => logInWithEmailAndPassword(email, password)}>
-          Connexion
-        </button>
-        <button id='login-btn' onClick={signInWithGoogle}>
-          Connexion avec Google
-        </button>
-      </form>
-
-      <p className='signup-label'>Vous avez un compte ?</p>
-      <Link to='/signup'>S'inscrire</Link>
-
+          <button id='login-btn' onClick={() => logInWithEmailAndPassword(email, password)}>
+            Connexion
+          </button>
+          <button id='login-btn' onClick={signInWithGoogle}>
+            Connexion avec Google
+          </button>
+        </form>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

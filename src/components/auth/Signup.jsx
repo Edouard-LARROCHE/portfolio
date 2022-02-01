@@ -56,12 +56,9 @@ export default function Signup() {
           <p> Connexion avec Google</p>
           <i className='fab fa-google'></i>
         </button>
-
-        <div className='acount'>
-          <p> Déjà un compte </p>
-          <Link to='/login'>
-            <i className='fas fa-sign-in-alt' />
-          </Link>
+        <div className='signup-label'>
+          <p style={{ marginRight: '15px' }}>Vous avez un compte ?</p>
+          <Link to='/signup'>SE CONNECTER</Link>
         </div>
       </form>
 

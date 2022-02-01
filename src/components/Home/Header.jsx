@@ -20,7 +20,7 @@ const Header = () => {
       <div className='nav'>
         <ul>
           <li>
-            <NavLink exact to='/'>
+            <NavLink to='/'>
               <p>Acceuil</p>
             </NavLink>
           </li>
