@@ -64,6 +64,8 @@ export default function Login() {
             <i className='fas fa-user-plus' />
           </Link>
         </div>
+
+        <h1> LOGIN APP </h1>
       </form>
       <Footer />
     </div>
