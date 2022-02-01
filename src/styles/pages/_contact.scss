@@ -1,0 +1,180 @@
+/***************    CONTACT TEXT  ***************/
+
+.text-intro {
+  padding-top: 4rem;
+  width: 50rem;
+  margin: 0 auto;
+
+  h1 {
+    font-family: $font-1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-family: $font-1;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding-top: 0;
+    width: 20rem;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/***************    FORMULAIRE  ***************/
+
+.form {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  .contact-form {
+    z-index: 1;
+    background: #f2f5f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 1rem 2rem 0;
+    border-radius: 3%;
+    min-width: 40%;
+    box-shadow: -30px 30px 0px 0px #054861;
+    transition: 0.8s ease-in-out;
+
+    &:hover {
+      box-shadow: 10px -10px 0px 1px #054861;
+    }
+  }
+
+  .send {
+    cursor: pointer;
+    margin-left: -265px;
+    margin-top: 0.5rem;
+  }
+
+  .email-err {
+    padding-left: 1.5rem;
+    color: #c10000;
+    font-size: 0.9rem;
+  }
+
+  .message-err {
+    padding-right: 1rem;
+    color: #c10000;
+    font-size: 0.9rem;
+  }
+
+  .form-message {
+    text-align: center;
+    width: 20rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    margin: 0 auto;
+
+    .contact-form {
+      width: 18rem;
+
+      box-shadow: -10px 10px 0px 0px #054861;
+      &:hover {
+        box-shadow: 5px -5px 0px 1px #054861;
+      }
+      .text-field {
+        margin: 0 auto;
+        padding: 0 0.8rem 0 0.8rem;
+      }
+      .send {
+        margin: 0 auto;
+      }
+
+      .email-err,
+      .message-err {
+        padding-left: 0.8rem;
+      }
+
+      .form-message {
+        width: 15rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/***************    INFORMATION  ***************/
+
+.info {
+  color: $black;
+  width: 25rem;
+  height: 18rem;
+  background: #f2f5f8;
+  display: grid;
+  grid-template-rows: 25% 70%;
+  border-radius: 5%;
+  box-shadow: 30px -30px 0px 0px #054861;
+  transition: 0.8s ease-in-out;
+
+  .r-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+
+    a {
+      margin: 1rem;
+      font-size: 1.8rem;
+      color: #054861;
+    }
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    box-shadow: -10px 10px 1px 0px #054861;
+  }
+
+  .mail {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.1rem;
+  }
+
+  i {
+    transform: translate(-25px, 20px);
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 18rem;
+    margin: 0 auto;
+    box-shadow: 10px -10px 0px 0px #054861;
+    &:hover {
+      box-shadow: -5px 5px 1px 0px #054861;
+    }
+
+    .r-s {
+      margin: 0 0 0 3rem;
+    }
+
+    .contact-me {
+      font-size: 0.9rem;
+      margin: 0 0 0 2rem;
+      padding: 1rem 1rem 1rem 0;
+    }
+
+    .mail {
+      font-size: 0.9rem;
+    }
+  }
+}

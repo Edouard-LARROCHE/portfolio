@@ -1,0 +1,10 @@
+/***************    SPHERE  ***************/
+
+.sphere {
+  width: 35rem;
+  margin: 0 auto;
+
+  @media screen and (max-width: 750px) {
+    width: 20rem;
+  }
+}

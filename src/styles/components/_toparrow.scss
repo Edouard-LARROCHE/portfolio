@@ -1,0 +1,18 @@
+/***************    TOP ARROW  ***************/
+
+.scrool-top {
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 2.5rem;
+  margin: 0 auto;
+
+  &:hover {
+    background: #f2f5f8;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}

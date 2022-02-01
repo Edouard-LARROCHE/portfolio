@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Mulish&family=Vujahday+Script&display=swap');
+
+$font-1: 'Roboto Condensed';
+$font-2: 'Mulish', sans-serif;
+$font-3: 'Abel', sans-serif;
+$font-4: 'Vujahday Script';
+
+/****************color****************/
+
+$color-1: #5f6d7e;
+$color-2: #e5e5db;
+$color-3: #d4d5cd;
+
+$white: #ddd;
+$black: #333;
+
+$color-base: #fff;
+$color-border: #054861;
+
+$w: 400px;
+$h: 250px;
+
+/****************styles global****************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3,
+h4 {
+  font-family: $font-2;
+  font-size: 16px;
+  line-height: 24px;
+}

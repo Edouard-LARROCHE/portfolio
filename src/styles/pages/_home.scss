@@ -1,0 +1,345 @@
+/***************   ALL PAGE  ***************/
+
+.navigation {
+  margin: 0 300px 0 300px;
+}
+
+/***************    HEADER  ***************/
+
+.header {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 10px 0 10px;
+    }
+  }
+}
+
+.link-to {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  min-height: 150px;
+
+  .name {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.nav {
+  display: flex;
+  margin: 0 auto;
+}
+.connect {
+  margin-left: 15rem;
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+  .navigation {
+    margin: 0 auto;
+    .link-to {
+      min-height: 0;
+      .name {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 10px 60px 0 0;
+      }
+    }
+  }
+}
+
+/***************  CONTENT  HEADER  ***************/
+
+.about-me {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 8rem;
+}
+
+.area1 {
+  background: #f2f5f8;
+  padding: 1rem;
+  border-radius: 5%;
+
+  #text {
+    font-family: $font-2;
+    font-size: 1.1rem;
+  }
+}
+
+.area2 {
+  h1 {
+    position: absolute;
+    right: 290px;
+    font-family: $font-1;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .avatar {
+    z-index: 0;
+    border-radius: 50px;
+    width: 20rem;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .avatarAfter {
+    z-index: 0;
+    border-radius: 50px;
+    border: 5px solid $black;
+    width: 20rem;
+    opacity: 1;
+    transition: 1s ease-in-out;
+  }
+
+  .react {
+    background: #5ed3f3;
+    border-radius: 30%;
+    transform: translate(200px, -400px);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .reactAfter {
+    background: #5ed3f3;
+    border-radius: 30%;
+    transform: translate(240px, -270px);
+    z-index: 1;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .javascript {
+    background: #efd81d;
+    border-radius: 10%;
+    transform: translate(290px, -400px);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .javascriptAfter {
+    background: #efd81d;
+    border-radius: 10%;
+    transform: translate(280px, -320px);
+    z-index: 2;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .html {
+    background: #dd4b25;
+    border-radius: 5%;
+    transform: translate(150px, -180px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .htmlAfter {
+    background: #dd4b25;
+    border-radius: 5%;
+    transform: translate(100px, -180px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .typescript {
+    background: #2f74c0;
+    border-radius: 15%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .typescriptAfter {
+    background: #2f74c0;
+    border-radius: 15%;
+    transform: translate(-30px, -230px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .node {
+    background: #3e863d;
+    border-radius: 15%;
+    transform: translateX(250px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .nodeAfter {
+    background: #3e863d;
+    border-radius: 15%;
+    transform: translate(550px, -250px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .sass {
+    background: #c76494;
+    border-radius: 15%;
+    transform: translateX(250px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .sassAfter {
+    background: #c76494;
+    border-radius: 15%;
+    transform: translate(450px, -380px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .tailwind {
+    background: #3baaaa;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .tailwindAfter {
+    background: #3baaaa;
+    border-radius: 50%;
+    transform: translate(480px, -130px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .styled {
+    background: #d48174;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .styledAfter {
+    background: #d48174;
+    border-radius: 50%;
+    transform: translate(300px, -50px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .bootstrap {
+    background: #53397a;
+    border-radius: 50%;
+    transform: translate(-170px, -270px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .bootstrapAfter {
+    background: #53397a;
+    border-radius: 50%;
+    transform: translate(70px, -50px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .jquery {
+    background: #0865a6;
+    border-radius: 30%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .jqueryAfter {
+    background: #0865a6;
+    border-radius: 30%;
+    transform: translate(-80px, -130px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+
+  .material {
+    background: #f0ac17;
+    border-radius: 30%;
+    transform: translate(100px, -400px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+  }
+  .materialAfter {
+    background: #f0ac17;
+    border-radius: 30%;
+    transform: translateY(-60px);
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px 2px $black;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-me {
+    display: block;
+    padding-top: 2rem;
+  }
+
+  .area1 {
+    margin: 1rem;
+  }
+
+  .area2 {
+    display: none;
+  }
+}
+
+/***************  CONTENT  FOOTER  ***************/
+.content-foot {
+  margin: 0 500px 0 500px;
+  background: #f2f5f8;
+  padding: 1rem;
+  border-radius: 5%;
+
+  #ex-pro {
+    font-family: $font-2;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    margin: 1rem;
+  }
+}
+/***************    FOOTER  ***************/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 1rem;
+  background: #f2f5f8;
+  width: 100%;
+  height: 10rem;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 0 10px 0 10px;
+    }
+  }
+
+  ul {
+    li i {
+      padding: 0.5rem;
+      font-size: 1.4rem;
+      color: $black;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translate(2px, 2px);
+      }
+    }
+  }
+}
