@@ -27,7 +27,7 @@ export default class Projects extends Component {
             <p>Projets</p>
             <h1>Applications web et mobile</h1>
             <br />
-            <p id='text'>Projets sur lesquels j'ai travaillé ...lorem ipsum jhiu iiug uiublini hutfcrdy hugtyd </p>
+            <p id='text'>Projets sur lesquels j'ai travaillé. De futurs projets arrivent prochainement ! </p>
             <div>
               <img className='bg' src='./assets/bg1.png' alt='bg' />
             </div>

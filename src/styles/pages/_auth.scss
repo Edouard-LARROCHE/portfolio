@@ -1,72 +1,64 @@
 /***************    LOGIN  ***************/
 
 .log-form {
+  height: 500px;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.form {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-
-  .card {
-    background: #fff;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    margin-bottom: 6rem;
-    padding: 2rem;
-    position: relative;
-    min-width: 350px;
-    width: 350px;
-    overflow: hidden;
-  }
-
-  .card-log {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
-
-  .card-log:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-i {
-  padding-left: 1rem;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-h2 {
-  margin: 2rem;
-  font-family: $font-1;
-  letter-spacing: 0.1rem;
-  font-size: 1.9rem;
-}
-
-.button-log {
+.input-container {
+  margin: 10px auto;
   display: flex;
-  background: none;
-  color: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.forgotten-password {
+  align-self: flex-end;
+  margin-top: 7px;
+}
+
+#login-btn {
+  align-self: center;
+  padding: 7px 30px;
+  margin-top: 30px;
   border: none;
-  padding: 0;
-  font: inherit;
-  outline: inherit;
+  color: #fff;
+  background-color: rgb(255, 39, 147);
+  box-shadow: 2px 2px 2px rgb(204, 4, 121);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
 }
 
-.forgot,
-.update {
-  display: flex;
-  margin: 2rem 0 1rem 0;
+#login-btn:hover {
+  background-color: rgb(204, 4, 121);
+  box-shadow: none;
+  transform: translateX(1px) translateY(1px);
 }
 
-.signup,
-.logout,
-.acount {
-  display: flex;
-  margin: 1rem 0 1rem 0;
+.signup-label {
+  position: relative;
+  bottom: -10px;
+
+  font-size: 14px;
 }
 
 /***************    PROFILE  ***************/
