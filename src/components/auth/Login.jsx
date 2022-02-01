@@ -47,7 +47,8 @@ export default function Login() {
         </button>
 
         <button className='button-log' onClick={signInWithGoogle}>
-          Connexion avec Google
+          <p> Connexion avec Google</p>
+          <i className='fab fa-google'></i>
         </button>
 
         <div className='forgot'>

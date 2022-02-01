@@ -13,7 +13,7 @@ export default function Signup() {
   const navigate = useNavigate();
 
   const register = () => {
-    if (!name) alert("Merci d'entrer un nom");
+    if (!name);
     registerWithEmailAndPassword(name, email, password);
   };
 
@@ -53,7 +53,8 @@ export default function Signup() {
         </button>
 
         <button className='button-log' onClick={signInWithGoogle}>
-          Connexion avec Google
+          <p> Connexion avec Google</p>
+          <i className='fab fa-google'></i>
         </button>
 
         <div className='acount'>
