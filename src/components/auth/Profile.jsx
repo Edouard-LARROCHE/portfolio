@@ -36,10 +36,12 @@ export default function Profile() {
         <Link to='/'>
           <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
         </Link>
-        <h2 style={{ marginBottom: '2rem' }}>Connecté en tant que</h2>
+        <div style={{ color: 'black' }}>
+          <h2 style={{ marginBottom: '2rem' }}>Connecté en tant que</h2>
 
-        <div style={{ marginBottom: '2rem' }}>Utilisateur: {name}</div>
-        <div>Adresse e-mail: {user?.email}</div>
+          <div style={{ marginBottom: '2rem' }}>Utilisateur: {name}</div>
+          <div>Adresse e-mail: {user?.email}</div>
+        </div>
 
         <button id='login-btn' onClick={logout}>
           Deconnexion

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -11,14 +11,18 @@ import Login from './components/auth/Login';
 import Profile from './components/auth/Profile';
 import ForgotPassword from './components/auth/ForgotPassword';
 import { PrivateRoute } from './components/auth/AuthenticatedRoute';
+// DARK MODE
+import { ThemeContext } from './components/DarkMode/ThemeContext';
 
 const App = () => {
-  return (
-    <div>
-      <BurgerMenu />
-      <TopArrowResponsive />
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
-      <div>
+  return (
+    <div className={`bg ${darkMode ? 'bg-dark' : 'bg-light'}`}>
+      <div className={`para ${darkMode ? 'para-dark' : 'para-light'}`}>
+        <BurgerMenu />
+        <TopArrowResponsive />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />

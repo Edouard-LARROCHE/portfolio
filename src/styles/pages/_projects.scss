@@ -6,7 +6,6 @@
   padding-top: 8rem;
 
   .text-acceuil {
-    background: #f2f5f8;
     padding: 1rem;
     border-radius: 5%;
     width: 35rem;
@@ -34,7 +33,7 @@
     border-radius: 0 5% 0 0;
     position: relative;
     left: 384px;
-    top: -175px;
+    top: -177px;
   }
   @media screen and (max-width: 750px) {
     padding-top: 2rem;
@@ -259,6 +258,7 @@
   padding: 10px;
   width: 100%;
   overflow: hidden;
+  color: #444;
 }
 
 .card2 .bottom {

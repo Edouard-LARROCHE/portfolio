@@ -23,6 +23,7 @@ export default class Projects extends Component {
     return (
       <>
         <div className='flex'>
+          {/* <div className={`bublle ${darkMode ? 'bubble-dark' : 'bubble-light'}`}> */}
           <div className='text-acceuil'>
             <p>Projets</p>
             <h1>Applications web et mobile</h1>
@@ -32,6 +33,7 @@ export default class Projects extends Component {
               <img className='bg' src='./assets/bg1.png' alt='bg' />
             </div>
           </div>
+          {/* </div> */}
         </div>
         <div className='radio'>
           <p className='p'>Découvrir les projets :</p>

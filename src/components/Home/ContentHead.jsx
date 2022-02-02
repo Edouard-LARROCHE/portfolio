@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../DarkMode/ThemeContext';
 
 const ContentHead = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const [avatar, setAvatar] = useState('avatar');
   const [react, setReact] = useState('react');
   const [javascript, setJavascript] = useState('javascript');
@@ -39,17 +43,19 @@ const ContentHead = () => {
 
   return (
     <div className='about-me'>
-      <div className='area1'>
-        <h1 style={{ textAlign: 'center' }}>Développeur Web en herbe, actuellement spécialisé dans le monde de React.</h1>
-        <br />
-        <p id='text' style={{ textAlign: 'center' }}>
-          L'année dernière, j'ai plongé dans le codage et découvert la magie du développement Web. J'ai passé mon temps à créer des applications
-          React, à tester des fonctions, à étendre des marges, des méthodes de rendu, des feuilles de style en cascade, du Javascript, à créer une
-          interface utilisateur, à améliorer l'expérience utilisateur, à déboguer, à boucler et à utiliser ma maîtrise de la conception ! Je suis
-          enthousiasmé par ce nouveau monde
-        </p>
-        <br />
-        <p style={{ textAlign: 'center', marginBottom: '0.3rem' }}>– je suis un aventurier, j'aime l'invention et j'aime la découverte –</p>
+      <div className={`bublle ${darkMode ? 'bubble-dark' : 'bubble-light'}`}>
+        <div className='area1'>
+          <h1 style={{ textAlign: 'center' }}>Développeur Web en herbe, actuellement spécialisé dans le monde de React.</h1>
+          <br />
+          <p id='text' style={{ textAlign: 'center' }}>
+            L'année dernière, j'ai plongé dans le codage et découvert la magie du développement Web. J'ai passé mon temps à créer des applications
+            React, à tester des fonctions, à étendre des marges, des méthodes de rendu, des feuilles de style en cascade, du Javascript, à créer une
+            interface utilisateur, à améliorer l'expérience utilisateur, à déboguer, à boucler et à utiliser ma maîtrise de la conception ! Je suis
+            enthousiasmé par ce nouveau monde
+          </p>
+          <br />
+          <p style={{ textAlign: 'center', marginBottom: '0.3rem' }}>– je suis un aventurier, j'aime l'invention et j'aime la découverte –</p>
+        </div>
       </div>
       <div className='area2'>
         <img className={react} src='./icons/react.svg' alt='react' style={{ width: '5rem' }} />
