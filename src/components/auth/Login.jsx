@@ -22,7 +22,9 @@ export default function Login() {
     <>
       <div className='log-form'>
         <form className='form-login'>
-          <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+          <Link to='/'>
+            <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+          </Link>
           <div className='input-container'>
             <TextField
               style={{ paddingBottom: '1rem' }}
@@ -52,6 +54,7 @@ export default function Login() {
           <button id='login-btn' onClick={signInWithGoogle}>
             Connexion avec Google
           </button>
+          <i style={{ marginTop: '0.5rem' }} className='fab fa-google' />
         </form>
       </div>
       <Footer />

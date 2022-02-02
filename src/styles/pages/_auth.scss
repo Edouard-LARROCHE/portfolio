@@ -5,7 +5,7 @@
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   align-items: center;
   text-align: center;
   font-family: sans-serif;
@@ -67,16 +67,12 @@
   position: relative;
   bottom: -10px;
   font-size: 14px;
+  padding-bottom: 2rem;
 }
 
-/***************    PROFILE  ***************/
-
-.profile {
-  padding-top: 2rem;
-  .profile-info {
-    position: relative;
-    left: 10rem;
+@media screen and (max-width: 750px) {
+  .log-form {
+    height: 580px;
+    padding-top: 4rem;
   }
 }
-
-/***************    SIGN UP  ***************/

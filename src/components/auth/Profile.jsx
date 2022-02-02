@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth, db, logout } from '../../firebase';
@@ -30,19 +31,19 @@ export default function Profile() {
   });
 
   return (
-    <div className='profile'>
-      <div className='profile-info'>
-        <h2 className=''>Connecté en tant que</h2>
+    <div className='log-form'>
+      <div className='form-login'>
+        <Link to='/'>
+          <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+        </Link>
+        <h2 style={{ marginBottom: '2rem' }}>Connecté en tant que</h2>
 
-        <div>{name}</div>
-        <div>{user?.email}</div>
+        <div style={{ marginBottom: '2rem' }}>Utilisateur: {name}</div>
+        <div>Adresse e-mail: {user?.email}</div>
 
-        <div className='logout'>
-          <button className='button-log' onClick={logout}>
-            <p> Deconnexion</p>
-            <i className='fas fa-sign-out-alt' />
-          </button>
-        </div>
+        <button id='login-btn' onClick={logout}>
+          Deconnexion
+        </button>
       </div>
 
       <Footer />
