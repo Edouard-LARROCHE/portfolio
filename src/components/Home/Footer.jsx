@@ -1,7 +1,7 @@
 import React from 'react';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import Stacks from '../Stacks';
-import DarkMode from '../DarkMode';
+import ButtonSwitch from '../DarkMode/ButtonSwitch';
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
             </li>
           </ul>
           <span style={{ margin: '2.5rem' }}>
-            <DarkMode />
+            <ButtonSwitch />
           </span>
         </div>
       </div>

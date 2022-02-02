@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { ThemeContext } from '../DarkMode/ThemeContext';
 
 const Header = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='header'>
       <div className='link-to'>
@@ -20,19 +23,19 @@ const Header = () => {
       <div className='nav'>
         <ul>
           <li>
-            <NavLink to='/'>
+            <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/'>
               <p>Acceuil</p>
             </NavLink>
           </li>
           <span>|</span>
           <li>
-            <NavLink to='/projects'>
+            <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/projects'>
               <p>Projets</p>
             </NavLink>
           </li>
           <span>|</span>
           <li>
-            <NavLink to='/contact'>
+            <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/contact'>
               <p>Contact</p>
             </NavLink>
           </li>
@@ -40,18 +43,18 @@ const Header = () => {
         <div className='connect'>
           <ul>
             <li>
-              <NavLink to='/login'>
+              <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/login'>
                 <p>Se connecter</p>
               </NavLink>
             </li>
             <span>|</span>
             <li>
-              <NavLink to='/signup'>
+              <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/signup'>
                 <p>S'inscrire</p>
               </NavLink>
             </li>
             <li>
-              <NavLink to='/profile'>
+              <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/profile'>
                 <p>Mon compte</p>
               </NavLink>
             </li>

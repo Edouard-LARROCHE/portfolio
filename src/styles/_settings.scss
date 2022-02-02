@@ -60,3 +60,43 @@ h4 {
   font-size: 16px;
   line-height: 24px;
 }
+
+/**************** DARK MODE ****************/
+
+/* Light Mode Styles */
+
+.bg-light {
+  background-color: #fff;
+}
+
+.heading-light {
+  color: black;
+}
+
+.para-light {
+  color: black;
+}
+
+.btn-light {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+
+.bg-dark {
+  background-color: black;
+}
+
+.heading-dark {
+  color: #fff;
+}
+
+.para-dark {
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: black;
+}
