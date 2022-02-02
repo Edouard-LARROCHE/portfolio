@@ -19,55 +19,45 @@ export default function Login() {
   });
 
   return (
-    <div className='log-form'>
-      <h2>Se connecter</h2>
-
-      <form className='card card-log'>
-        <TextField
-          style={{ paddingBottom: '1rem' }}
-          placeholder='Adresse e-mail'
-          type='email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <TextField
-          style={{ paddingBottom: '1rem' }}
-          placeholder='Mot de passe'
-          type='password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-
-        <button className='button-log' onClick={() => logInWithEmailAndPassword(email, password)}>
-          <p>Connexion</p>
-          <i className='fas fa-sign-in-alt' />
-        </button>
-
-        <button className='button-log' onClick={signInWithGoogle}>
-          <p> Connexion avec Google</p>
-          <i className='fab fa-google'></i>
-        </button>
-
-        <div className='forgot'>
-          <p> Mot de passe oublié</p>
+    <>
+      <div className='log-form'>
+        <form className='form-login'>
+          <Link to='/'>
+            <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+          </Link>
+          <div className='input-container'>
+            <TextField
+              style={{ paddingBottom: '1rem' }}
+              placeholder='Adresse e-mail'
+              type='email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className='input-container'>
+            <TextField
+              style={{ paddingBottom: '1rem' }}
+              placeholder='Mot de passe'
+              type='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
           <Link to='/forgot-password'>
-            <i className='fas fa-trash-restore' />
+            <p className='link forgotten-password'> Mot de passe oublié ?</p>
           </Link>
-        </div>
-
-        <div className='signup'>
-          <p>S'inscrire</p>
-          <Link to='/signup'>
-            <i className='fas fa-user-plus' />
-          </Link>
-        </div>
-
-        <h1> LOGIN APP </h1>
-      </form>
+          <button id='login-btn' onClick={() => logInWithEmailAndPassword(email, password)}>
+            Connexion
+          </button>
+          <button id='login-btn' onClick={signInWithGoogle}>
+            Connexion avec Google
+          </button>
+          <i style={{ marginTop: '0.5rem' }} className='fab fa-google' />
+        </form>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

@@ -18,26 +18,25 @@ export default function ForgotPassword() {
   });
 
   return (
-    <div>
-      <h2 className=''>Reset mot de passe</h2>
-      <form>
-        <p> Envoyer un e-mail de réinitialisation du mot de passe</p>
-        <TextField
-          style={{ paddingBottom: '1rem', paddingTop: '1rem' }}
-          placeholder='Adresse e-mail'
-          type='email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <SendIcon onClick={() => sendPasswordReset(email)} />
-        <div className='signup'>
-          <p>S'inscrire</p>
-          <Link to='/signup'>
-            <i className='fas fa-user-plus' />
-          </Link>
+    <div className='log-form'>
+      <form className='form-login'>
+        <Link to='/'>
+          <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+        </Link>
+        <p> Envoyer un e-mail de réinitialisation</p>
+        <div className='input-container'>
+          <TextField
+            style={{ paddingBottom: '1rem', paddingTop: '1rem' }}
+            placeholder='Adresse e-mail'
+            type='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <SendIcon style={{ cursor: 'pointer' }} onClick={() => sendPasswordReset(email)} />
         </div>
       </form>
+
       <Footer />
     </div>
   );

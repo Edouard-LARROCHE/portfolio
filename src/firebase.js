@@ -11,19 +11,21 @@ import {
 import { getFirestore, query, getDocs, collection, where, addDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyD6GOt2TKgpMi9ntbVweAbwbRc2kU2LDuY',
+  apiKey: 'AIzaSyDwU-TuD1ZKpAaGwI8MO36a_AXDtZSPWT4',
 
-  authDomain: 'portfolio-development-b7746.firebaseapp.com',
+  authDomain: 'portfolio-c12b7.firebaseapp.com',
 
-  databaseURL: 'https://portfolio-development-b7746-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'portfolio-c12b7',
 
-  projectId: 'portfolio-development-b7746',
+  storageBucket: 'portfolio-c12b7.appspot.com',
 
-  storageBucket: 'portfolio-development-b7746.appspot.com',
+  messagingSenderId: '236734604926',
 
-  messagingSenderId: '666429004521',
+  appId: '1:236734604926:web:0fd7dca658e8abe4cb5a2f',
 
-  appId: '1:666429004521:web:25842edf47f0049b8eae78',
+  measurementId: 'G-MGL6ZZ8TXT',
+
+  databaseURL: 'https://portfolio-c12b7-default-rtdb.europe-west1.firebasedatabase.app/',
 };
 
 const app = initializeApp(firebaseConfig);
@@ -47,7 +49,6 @@ const signInWithGoogle = async () => {
     }
   } catch (err) {
     console.error(err);
-    alert(err.message);
   }
 };
 
@@ -56,7 +57,6 @@ const logInWithEmailAndPassword = async (email, password) => {
     await signInWithEmailAndPassword(auth, email, password);
   } catch (err) {
     console.error(err);
-    alert(err.message);
   }
 };
 
@@ -72,7 +72,6 @@ const registerWithEmailAndPassword = async (name, email, password) => {
     });
   } catch (err) {
     console.error(err);
-    alert(err.message);
   }
 };
 
@@ -82,7 +81,6 @@ const sendPasswordReset = async (email) => {
     alert('Password reset link sent!');
   } catch (err) {
     console.error(err);
-    alert(err.message);
   }
 };
 

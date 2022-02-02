@@ -6,11 +6,11 @@ import Project from './pages/Projects';
 import BurgerMenu from './components/BurgerMenu';
 import TopArrowResponsive from './components/TopArrowResponsive';
 // AUTH
-// import PrivateRoute from './components/auth/PrivateRoute';
 import Signup from './components/auth/Signup';
 import Login from './components/auth/Login';
 import Profile from './components/auth/Profile';
 import ForgotPassword from './components/auth/ForgotPassword';
+import { PrivateRoute } from './components/auth/AuthenticatedRoute';
 
 const App = () => {
   return (
@@ -20,9 +20,16 @@ const App = () => {
 
       <div>
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/projects' element={<Project />} />
+          <Route
+            path='/projects'
+            element={
+              <PrivateRoute>
+                <Project />
+              </PrivateRoute>
+            }
+          />
           <Route path='/profile' element={<Profile />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />

@@ -24,47 +24,52 @@ export default function Signup() {
 
   return (
     <div className='log-form'>
-      <h2>Inscription</h2>
-
-      <form className='card card-log'>
-        <TextField style={{ paddingBottom: '1rem' }} placeholder='Nom' type='text' value={name} onChange={(e) => setName(e.target.value)} required />
-
-        <TextField
-          style={{ paddingBottom: '1rem' }}
-          placeholder='Adresse e-mail'
-          type='email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <TextField
-          style={{ paddingBottom: '1rem' }}
-          placeholder='Mot de passe'
-          type='password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-
-        <button className='button-log' onClick={register}>
-          <p>Inscription</p>
-          <i className='far fa-check-circle' />
-        </button>
-
-        <button className='button-log' onClick={signInWithGoogle}>
-          <p> Connexion avec Google</p>
-          <i className='fab fa-google'></i>
-        </button>
-
-        <div className='acount'>
-          <p> Déjà un compte </p>
-          <Link to='/login'>
-            <i className='fas fa-sign-in-alt' />
-          </Link>
+      <form className='form-login'>
+        <Link to='/'>
+          <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
+        </Link>
+        <div className='input-container'>
+          <TextField
+            style={{ paddingBottom: '1rem' }}
+            placeholder='Nom'
+            type='text'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
         </div>
+        <div className='input-container'>
+          <TextField
+            style={{ paddingBottom: '1rem' }}
+            placeholder='Adresse e-mail'
+            type='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className='input-container'>
+          <TextField
+            style={{ paddingBottom: '1rem' }}
+            placeholder='Mot de passe'
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button id='login-btn' onClick={register}>
+          <p>Inscription</p>
+        </button>
+        <button id='login-btn' onClick={signInWithGoogle}>
+          Connexion avec Google
+        </button>
+        <i style={{ marginTop: '0.5rem' }} className='fab fa-google' />
       </form>
-
+      <div className='signup-label'>
+        <p style={{ marginRight: '15px' }}>Vous avez un compte?</p>
+        <Link to='/signup'>SE CONNECTER</Link>
+      </div>
       <Footer />
     </div>
   );
