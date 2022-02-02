@@ -18,12 +18,12 @@ export default function ForgotPassword() {
   });
 
   return (
-    <div className='log-form'>
+    <div className='log-form-forgot'>
       <form className='form-login'>
         <Link to='/'>
           <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
         </Link>
-        <p> Envoyer un e-mail de réinitialisation</p>
+        <p style={{ color: ' black' }}> Envoyer un e-mail de réinitialisation</p>
         <div className='input-container'>
           <TextField
             style={{ paddingBottom: '1rem', paddingTop: '1rem' }}
@@ -33,7 +33,7 @@ export default function ForgotPassword() {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <SendIcon style={{ cursor: 'pointer' }} onClick={() => sendPasswordReset(email)} />
+          <SendIcon style={{ cursor: 'pointer', color: 'black' }} onClick={() => sendPasswordReset(email)} />
         </div>
       </form>
 

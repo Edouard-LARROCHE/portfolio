@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { ThemeContext } from '../components/DarkMode/ThemeContext';
 
 const BurgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,10 +9,15 @@ const BurgerMenu = () => {
     setMenuOpen(menuOpen === false ? true : false);
   };
 
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className='burger-menu'>
       <nav>
-        <i className='fa fa-bars' aria-hidden='true' onClick={handleChange} />
+        <div className={`btn ${darkMode ? 'btn-dark' : 'btn-light'}`}>
+          <i className='fa fa-bars' aria-hidden='true' onClick={handleChange} />
+        </div>
         <ul className={`extend ${menuOpen ? 'is-expanded' : ''}`}>
           <NavLink to='/' onClick={handleChange}>
             <li>Acceuil</li>
@@ -29,7 +35,7 @@ const BurgerMenu = () => {
             <li>S'inscrire</li>
           </NavLink>
           <NavLink to='/profile' onClick={handleChange}>
-            <li>Profile</li>
+            <li>Mon compte</li>
           </NavLink>
         </ul>
       </nav>

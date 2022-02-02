@@ -82,6 +82,12 @@ h4 {
   cursor: pointer;
 }
 
+.bubble-light {
+  background: #f2f5f8;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
 /* Dark Mode Styles */
 
 .bg-dark {
@@ -97,6 +103,11 @@ h4 {
 }
 
 .btn-dark {
-  background-color: #fff;
-  color: black;
+  color: #fff;
+}
+
+.bubble-dark {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 5%;
 }

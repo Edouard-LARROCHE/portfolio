@@ -1,8 +1,27 @@
 /***************    LOGIN  ***************/
 
 .log-form {
-  height: 100px;
-  min-height: 60vh;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.log-form-signup {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.log-form-forgot {
+  height: 450px;
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
@@ -13,6 +32,7 @@
 
 .form-login {
   padding: 40px;
+  margin: 2rem 0 2rem 0;
   background-color: #fff;
   border-radius: 5px;
   display: flex;

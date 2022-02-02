@@ -36,24 +36,42 @@
   margin: 0 auto;
 }
 .connect {
-  margin-left: 15rem;
+  margin-left: 8rem;
+}
+
+.dark-light {
+  display: flex;
+  align-items: center;
+}
+
+.button-mode {
+  margin-right: 0.5rem;
+  transform: translateY(2px);
 }
 
 @media screen and (max-width: 750px) {
   .nav {
     display: none;
   }
+
   .navigation {
     margin: 0 auto;
     .link-to {
       min-height: 0;
+
       .name {
         position: relative;
         left: 0;
-        top: 0;
-        margin: 10px 60px 0 0;
+        top: 20px;
+        margin: 50px 60px 20px 0;
       }
     }
+  }
+  .dark-light {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 1rem 0 0 1rem;
   }
 }
 
@@ -66,9 +84,7 @@
 }
 
 .area1 {
-  background: #f2f5f8;
   padding: 1rem;
-  border-radius: 5%;
 
   #text {
     font-family: $font-2;
@@ -297,8 +313,6 @@
 /***************  CONTENT  FOOTER  ***************/
 .content-foot {
   margin: 0 500px 0 500px;
-  background: #f2f5f8;
-  padding: 1rem;
   border-radius: 5%;
 
   #ex-pro {
@@ -324,6 +338,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $black;
 
     p {
       margin: 0 10px 0 10px;

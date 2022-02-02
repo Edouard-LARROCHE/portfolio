@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import ButtonSwitch from '../DarkMode/ButtonSwitch';
 import { ThemeContext } from '../DarkMode/ThemeContext';
 
 const Header = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className='header'>
       <div className='link-to'>
@@ -60,6 +62,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className='dark-light'>
+        <div className='button-mode'>
+          <ButtonSwitch />
+        </div>
+        <p className={`heading ${darkMode ? 'heading-dark' : 'heading-light'}`}>{darkMode ? 'Dark ' : 'Light'}</p>
       </div>
     </div>
   );

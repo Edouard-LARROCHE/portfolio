@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from '../DarkMode/ThemeContext';
 import { TextField } from '@material-ui/core';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
@@ -6,6 +7,9 @@ import { auth, registerWithEmailAndPassword, signInWithGoogle } from '../../fire
 import Footer from '../Home/Footer';
 
 export default function Signup() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -23,7 +27,7 @@ export default function Signup() {
   });
 
   return (
-    <div className='log-form'>
+    <div className='log-form-signup'>
       <form className='form-login'>
         <Link to='/'>
           <img style={{ width: '7rem', marginBottom: '1rem' }} src='./assets/CV.png' alt='logo' />
@@ -68,7 +72,9 @@ export default function Signup() {
       </form>
       <div className='signup-label'>
         <p style={{ marginRight: '15px' }}>Vous avez un compte?</p>
-        <Link to='/signup'>SE CONNECTER</Link>
+        <Link className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/signup'>
+          SE CONNECTER
+        </Link>
       </div>
       <Footer />
     </div>

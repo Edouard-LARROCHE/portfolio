@@ -20,9 +20,9 @@ const App = () => {
 
   return (
     <div className={`bg ${darkMode ? 'bg-dark' : 'bg-light'}`}>
-      <BurgerMenu />
-      <TopArrowResponsive />
       <div className={`para ${darkMode ? 'para-dark' : 'para-light'}`}>
+        <BurgerMenu />
+        <TopArrowResponsive />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
