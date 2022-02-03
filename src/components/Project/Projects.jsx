@@ -78,6 +78,10 @@ export default class Projects extends Component {
                       <p>Github</p>
                     </a>
                   </div>
+                  <div className='comment-like'>
+                    <i className='far fa-comment' style={{ cursor: 'pointer', margin: '1rem' }} />
+                    <i className='far fa-thumbs-up' style={{ cursor: 'pointer', margin: '0.9rem' }} />
+                  </div>
                 </div>
               );
             })}
