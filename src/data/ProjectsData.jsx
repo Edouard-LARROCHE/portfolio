@@ -1,6 +1,14 @@
 export const projectsData = [
   {
     id: 1,
+    title: 'Maison Morin',
+    picture: './assets/Maison Morin Bleu et Or.png',
+    languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
+    source: 'https://github.com/Edouard-LARROCHE',
+    git: 'https://github.com/Edouard-LARROCHE',
+  },
+  {
+    id: 2,
     title: 'Yoga with Joy',
     picture: './assets/joy.png',
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
@@ -8,7 +16,7 @@ export const projectsData = [
     git: 'https://github.com/WildCodeSchool/remote-fr-march21-js-joy-yoga-front',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Mars-Bot',
     picture: './assets/mars.png',
     languages: ['JavaScript', 'css', 'React JS', 'Tout'],
@@ -16,7 +24,7 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE/Mars-chatbot',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Portfolio V.1',
     picture: './assets/test.png',
     languages: ['JavaScript', 'sass', 'React JS', 'Node JS', 'Tout'],
@@ -24,14 +32,14 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE/CV-reactjs',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Nebula',
     picture: './assets/nebula.jpg',
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
     git: 'https://github.com/Edouard-LARROCHE',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Portfolio Wilders',
     picture: './assets/wildcodeschool.png',
     languages: ['JavaScript', 'css', 'HTML', 'Tout'],
@@ -39,7 +47,7 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Oovy',
     picture: './assets/oovy.png',
     languages: ['JavaScript', 'css', 'React JS', 'Tout'],
