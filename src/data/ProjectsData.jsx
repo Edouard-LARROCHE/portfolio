@@ -1,3 +1,5 @@
+import Loader from '../components/Loader';
+
 export const projectsData = [
   {
     id: 1,
@@ -6,6 +8,7 @@ export const projectsData = [
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
     source: 'https://github.com/Edouard-LARROCHE',
     git: 'https://github.com/Edouard-LARROCHE',
+    loader: <Loader />,
   },
   {
     id: 2,

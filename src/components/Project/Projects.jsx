@@ -77,6 +77,7 @@ export default class Projects extends Component {
                     </a>
                   </div>
                   <div className='comment-like'>
+                    {projet.loader}
                     <i className='far fa-comment' style={{ cursor: 'pointer', margin: '1rem' }} />
                     <i className='far fa-thumbs-up' style={{ cursor: 'pointer', margin: '0.9rem' }} />
                   </div>
