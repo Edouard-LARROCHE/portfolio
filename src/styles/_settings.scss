@@ -117,7 +117,13 @@ h4 {
 .div-spinner {
   position: relative;
   top: 10px;
-  left: -200px;
+  left: -150px;
+
+  @media screen and (max-width: 750px) {
+    position: relative;
+    top: 10px;
+    left: -120px;
+  }
 }
 
 .loader {
