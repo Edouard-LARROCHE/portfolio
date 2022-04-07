@@ -3,14 +3,10 @@
 .flex {
   display: flex;
   justify-content: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
+  background: $color-6;
 
   .text-acceuil {
-    padding: 1rem;
-    border-radius: 5%;
-    width: 35rem;
-    height: 15rem;
-
     h1 {
       width: 25rem;
     }
@@ -20,6 +16,7 @@
       font-size: 1.1rem;
     }
   }
+
   .p {
     margin: 27px 0 0 0;
     text-decoration: none;
@@ -29,28 +26,32 @@
   }
 
   .bg {
-    width: 10rem;
+    width: 8rem;
     border-radius: 0 5% 0 0;
     position: relative;
     left: 384px;
     top: -177px;
   }
+
   @media screen and (max-width: 750px) {
     padding-top: 2rem;
     .text-acceuil {
       margin: 0 auto;
       max-width: 20rem;
+
       h1 {
         width: 18rem;
       }
+
       #text {
         height: 4rem;
         word-wrap: break-word;
       }
+
       .bg {
-        width: 5rem;
+        width: 6rem;
         position: relative;
-        left: 222px;
+        left: 240px;
         top: -196px;
       }
     }
@@ -73,7 +74,12 @@
     font-weight: bolder;
     margin: 0 2rem 0 2rem;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
+
   p {
     transform: translate(-30px, -10px);
   }
@@ -223,22 +229,32 @@
   }
 }
 
-.comment-like {
+.bottom-content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  .prod {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .comment-like {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /***************   PROJETS ALT  ***************/
 
 .bg-alt {
-  width: 10rem;
-  border-radius: 0 5% 0 0;
+  width: 8rem;
   position: relative;
-  left: 383px;
-  top: -114px;
+  left: 350px;
+  top: -160px;
 
   @media screen and (max-width: 750px) {
-    width: 5rem;
+    width: 6rem;
     position: relative !important;
     left: 222px !important;
     top: -196px !important;

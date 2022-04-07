@@ -29,7 +29,7 @@ export default class Projects extends Component {
             <br />
             <p id='text'>Projets sur lesquels j'ai travaillé. De futurs projets arrivent prochainement ! </p>
             <div>
-              <img className='bg' src='./assets/bg1.png' alt='bg' />
+              <img className='bg' src='./assets/test.png' alt='bg' />
             </div>
           </div>
         </div>
@@ -76,10 +76,15 @@ export default class Projects extends Component {
                       <p>Github</p>
                     </a>
                   </div>
-                  <div className='comment-like'>
-                    {projet.loader}
-                    <i className='far fa-comment' style={{ cursor: 'pointer', margin: '1rem' }} />
-                    <i className='far fa-thumbs-up' style={{ cursor: 'pointer', margin: '0.9rem' }} />
+                  <div className='bottom-content'>
+                    <div className='prod'>
+                      <p style={{ fontSize: '12px', marginRight: '10px' }}> {projet.dev}</p>
+                      {projet.loader}
+                    </div>
+                    <div className='comment-like'>
+                      <i className='far fa-comment' style={{ cursor: 'pointer', margin: '1rem' }} />
+                      <i className='far fa-thumbs-up' style={{ cursor: 'pointer', margin: '0.9rem' }} />
+                    </div>
                   </div>
                 </div>
               );

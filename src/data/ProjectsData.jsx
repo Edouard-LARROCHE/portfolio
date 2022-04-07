@@ -9,6 +9,7 @@ export const projectsData = [
     source: 'https://github.com/Edouard-LARROCHE',
     git: 'https://github.com/Edouard-LARROCHE',
     loader: <Loader />,
+    dev: 'En production',
   },
   {
     id: 2,
