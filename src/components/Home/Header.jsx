@@ -67,7 +67,6 @@ const Header = () => {
         <div className='button-mode'>
           <ButtonSwitch />
         </div>
-        <p className={`heading ${darkMode ? 'heading-dark' : 'heading-light'}`}>{darkMode ? 'Version standard' : 'Version contrastée'}</p>
       </div>
     </div>
   );
