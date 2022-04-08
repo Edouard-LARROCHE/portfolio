@@ -26,7 +26,7 @@ const Header = () => {
         <ul>
           <li>
             <NavLink className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/'>
-              <p>Acceuil</p>
+              <p>Accueil</p>
             </NavLink>
           </li>
           <span>|</span>
@@ -67,7 +67,6 @@ const Header = () => {
         <div className='button-mode'>
           <ButtonSwitch />
         </div>
-        <p className={`heading ${darkMode ? 'heading-dark' : 'heading-light'}`}>{darkMode ? 'Dark ' : 'Light'}</p>
       </div>
     </div>
   );

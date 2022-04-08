@@ -8,7 +8,13 @@ const ContentFoot = () => {
   return (
     <div className='content-foot'>
       <div className={`bublle ${darkMode ? 'bubble-dark' : 'bubble-light'}`}>
-        <h1 style={{ textAlign: 'center' }}>Expériences professionnelles</h1>
+        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Expériences professionnelles</h1>
+        <br />
+        <p id='ex-pro' style={{ textDecoration: 'underline' }}>
+          Stage développeur web chez Maison-Morin : Janvier 2022 à Avril 2022
+        </p>
+        <br />
+        <p>-&gt; -Stage développeur web pour Maison-Morin. Création de site indépendant. Dev Full-Stack. Stack MERN.</p>
         <br />
         <p id='ex-pro' style={{ textDecoration: 'underline' }}>
           Formation developpeur web Wild Code School : Mars 2021 à Juillet 2021

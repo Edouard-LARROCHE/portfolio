@@ -16,7 +16,7 @@ const ProjectsAlt = () => {
             <br />
             <p id='text'>Divers IDE en ligne pour retrouver d'autres travaux et projets.</p>
             <div>
-              <img className='bg-alt' src='./assets/bg1.png' alt='bg' />
+              <img className='bg-alt' src='./assets/test.png' alt='bg' />
             </div>
           </div>
         </div>
