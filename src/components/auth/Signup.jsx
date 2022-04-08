@@ -72,7 +72,7 @@ export default function Signup() {
       </form>
       <div className='signup-label'>
         <p style={{ marginRight: '15px' }}>Vous avez un compte?</p>
-        <Link className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/signup'>
+        <Link className={`para ${darkMode ? 'para-dark' : 'para-light'}`} to='/login'>
           SE CONNECTER
         </Link>
       </div>
