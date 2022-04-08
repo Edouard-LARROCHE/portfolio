@@ -15,16 +15,40 @@ const CardsXp = () => {
   return (
     <div className={xp}>
       <div className='card-1'>
-        <span>Skills</span>
+        <span className='span1'>Skills</span>
+        <span className='span2'>
+          <p>-Esprit d'équipe</p>
+          <p>-Autonomie</p>
+          <p>-Rigueur et précision</p>
+          <p>-Prise d'initiative</p>
+          <p>-Gestion d'équipe</p>
+        </span>
       </div>
       <div className='card-2'>
-        <span>Hard-skills</span>
+        <span className='span1'>Hard-skills</span>
+        <span className='span2'>
+          <p>-JavaScript</p>
+          <p>-React (REDUX)</p>
+          <p>-Node (EXPRESS)</p>
+          <p>-HTML / CSS</p>
+          <p>-BDD SQL et NoSQL</p>
+        </span>
       </div>
       <div className='card-3'>
-        <span>Intêrets</span>
+        <span className='span1'>Intêrets</span>
+        <span className='span2'>
+          <p>-Batterie et percussions</p>
+          <p>-Nouvelles technos</p>
+          <p>-Sports de glisse</p>
+          <p>-7ème art</p>
+        </span>
       </div>
       <div className='card-4'>
-        <span>Langues</span>
+        <span className='span1'>Langues</span>
+        <span className='span2'>
+          <p>-Français</p>
+          <p>-Anglais</p>
+        </span>
       </div>
     </div>
   );

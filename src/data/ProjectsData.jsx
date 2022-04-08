@@ -6,7 +6,7 @@ export const projectsData = [
     title: 'Maison Morin',
     picture: './assets/Maison Morin Bleu et Or.png',
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
-    source: 'https://github.com/Edouard-LARROCHE',
+
     git: 'https://github.com/Edouard-LARROCHE',
     loader: <Loader />,
     dev: 'En production',
