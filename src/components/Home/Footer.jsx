@@ -10,7 +10,7 @@ const Footer = () => {
         <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '1.5rem' }}>
           <span>
             <CopyrightIcon />
-            <p> - portfolio 2022</p>
+            <p> - portfolio 2020</p>
           </span>
           <ul>
             <li>
