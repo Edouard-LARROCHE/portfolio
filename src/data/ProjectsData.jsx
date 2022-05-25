@@ -6,7 +6,7 @@ export const projectsData = [
     title: 'Maison Morin',
     picture: './assets/Maison Morin Bleu et Or.png',
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
-
+    source: 'https://maison-morin.herokuapp.com/',
     git: 'https://github.com/Edouard-LARROCHE',
     loader: <Loader />,
     dev: 'En production',
@@ -21,6 +21,14 @@ export const projectsData = [
   },
   {
     id: 3,
+    title: 'I-web',
+    picture: './assets/i-web.png',
+    languages: ['JavaScript', 'css', 'React JS', 'Tout'],
+    source: 'https://wondrous-stardust-bb99e2.netlify.app',
+    git: 'https://github.com/Edouard-LARROCHE/i-web',
+  },
+  {
+    id: 4,
     title: 'Mars-Bot',
     picture: './assets/mars.png',
     languages: ['JavaScript', 'css', 'React JS', 'Tout'],
@@ -28,7 +36,7 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE/Mars-chatbot',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Portfolio V.1',
     picture: './assets/test.png',
     languages: ['JavaScript', 'sass', 'React JS', 'Node JS', 'Tout'],
@@ -36,14 +44,14 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE/CV-reactjs',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Nebula',
     picture: './assets/nebula.jpg',
     languages: ['JavaScript', 'css', 'React JS', 'Node JS', 'Tout'],
     git: 'https://github.com/Edouard-LARROCHE',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Portfolio Wilders',
     picture: './assets/wildcodeschool.png',
     languages: ['JavaScript', 'css', 'HTML', 'Tout'],
@@ -51,7 +59,7 @@ export const projectsData = [
     git: 'https://github.com/Edouard-LARROCHE',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Oovy',
     picture: './assets/oovy.png',
     languages: ['JavaScript', 'css', 'React JS', 'Tout'],
